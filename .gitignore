@@ -1,0 +1,6 @@
+/env
+.env
+jja.db
+данные.txt
+репозитории.txt
+*__pycache__*

@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    <title>Список пользователей</title>
+{% endblock %}
+
+{% block content %}
+    <div class="container mt-5">
+        {% for user in users %}
+
+            <div class="row align-items-center mt-3">
+                <div class="col-1 border-end">{{user.id}}</div>
+                <div class="col-2 border-end">{{user.name}}</div>
+                <div class="col-2 border-end">{{user.place_name}}</div>
+                <div class="col-1">
+                    <a class="btn btn-primary" href="/user/{{user.id}}">detail</a>
+                </div>
+            </div>
+            
+
+        {% endfor %}
+    </div>
+    
+{% endblock %}
